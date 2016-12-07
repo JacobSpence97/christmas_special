@@ -1,9 +1,9 @@
-$.getJSON("http://api.wunderground.com/api/fd843d28868e77c2/conditions/q/MS/Water_Valley.json").done(function(json) {
-    weather = json.data;
-    console.log(json)
-});
+// $.getJSON("http://api.wunderground.com/api/fd843d28868e77c2/conditions/q/MS/Water_Valley.json").done(function(json) {
+//     weather = json.data;
+//     console.log(json)
+// });
 var songs = ["adam.mp3", "addey.mp3", "dustin.mp3", "jacob.mp3",
-              "jamesh.mp3", "jamess.mp3", "matain.mp3", "nate.mp3",
+              "jamesh.mp3", "jamess.mp3", "martain.mp3", "nate.mp3",
               "nicloe.mp3", "randoms.mp3", "ricky.mp3", "sean.mp3"]
 
 var trees = ["tree1.png", "tree2.png", "tree3.jpeg"];
@@ -17,12 +17,13 @@ function tree() {
     $("#treebox").attr("src", "img/" + which);
 };
 var pic = $("#treebox")
-function song() {
-    var which = songs[Math.floor(Math.random() * 12)];
-    for(x = 0; x < songs.length; x ++){
-      $("#music").attr("src", "sound/" + which);
-    }
-  };
+
+function song(){
+  var which = songs[Math.floor(Math.random() * 12)]
+  $("#music").attr("src", "sound/" + which);
+  console.log(which)
+};
+
 
 function show_choice() {
     pic.empty()
@@ -31,15 +32,15 @@ function show_choice() {
     } else {
         $("#treebox").attr("src", "img/snowman.png")
     };
-}
+};
 
 
 
 
     $(document).ready(function() {
-      song()
+      song();
         $("#submit").click(function() {
-            show_choice()
+            show_choice();
         });
     });
 

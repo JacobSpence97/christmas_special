@@ -11,6 +11,7 @@
                  <option value = "snowman">Snowman</option>
                </select>
 <button id='submit'type="button">SUBMIT!</button>
+<button id='grinch'type="button">SUBMIT YOUR CREATION!</button>
 <br>
 <br>
 <br>
@@ -19,9 +20,9 @@
 
   <img id="treebox"></img>
   <img id='snowmanbox'></img>
-  <div id= 'items'>
+  <div id='items'>
   </div>
-  <audio id= 'music' style="display: none" controls="controls" loop = "false" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)">
+  <audio id='music' onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)" onended="song()">
           <source src="" type="audio/mp3" />
       </audio>
 </body>
