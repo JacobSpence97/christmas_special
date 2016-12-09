@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>A BCCA Christmas!</title>
-<link rel="stylesheet" type="text/css" href="christmas.css" />
-<link href="img/snowflake.png" rel="shortcut icon" />
-</head>
-<body>
-  Do you wanna build a...
-  <select id = "myList">
-                 <option value = "christmas tree">Christmas tree</option>
-                 <option value = "snowman">Snowman</option>
-               </select>
-<button id='submit'type="button">ENTER CHOICE</button>
-<button id='grinch'type="button">SUBMIT YOUR CREATION!</button>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <head>
+      <title>A BCCA Christmas!</title>
+      <link rel="stylesheet" type="text/css" href="christmas.css" />
+      <link href="img/snowflake.png" rel="shortcut icon" />
+  </head>
+  <body>
+    Do you wanna build a...
+    <select id="myList">
+       <option value = "christmas tree">Christmas tree</option>
+       <option value = "snowman">Snowman</option>
+    </select>
+    <button id='submit' type="button">ENTER CHOICE</button>
+    <button id='grinch' type="button">SUBMIT YOUR CREATION!</button>
+    <br><br><br><br><br>
 
-  <img id="treebox"></img>
-  <span id='items'>
-</span>
-  <audio id='music' onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)" onended="song()">
-          <source src="" type="audio/mp3" />
-      </audio>
-</body>
-<script src="jquery.js"></script>
-<script src="jquery-ui.js"></script>
-<script  src="christmas.js"></script>
+    <img id="treebox"></img>
+    <span id='items'>
+    </span>
+    <audio id='music' onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)" onended="song()">
+        <source src="" type="audio/mp3" />
+    </audio>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="christmas.js"></script>
+  </body>
 </html>
