@@ -54,7 +54,7 @@ function grinch() {
     pic.empty();
     item.hide();
     $("#music").attr("src", "sound/grinch.mp3");
-    $("#treebox").attr("src", "img/grinch.jpg").hide().fadeIn(9999);
+    $("#treebox").attr("src", "img/grinch.jpg").hide().fadeIn(19999);
 
 };
 
