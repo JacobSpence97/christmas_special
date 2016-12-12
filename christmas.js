@@ -73,7 +73,6 @@ $(document).ready(function() {
             $("body").css('background-image', 'url(img/sun.jpg)');
         }
     });
-    song();
     $("#submit").click(function() {
         $("#items").empty();
         show_choice();
