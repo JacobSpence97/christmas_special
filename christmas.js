@@ -61,10 +61,12 @@ function grinch() {
 
 
 $(document).ready(function() {
-    $.getJSON("http://api.wunderground.com/api/fd843d28868e77c2/conditions/q/MS/Water_Valley.json").done(function(json) {
-        weather = json;
-        console.log(json)
-        if (weather.current_observation.temp_f <= 60) {
+    $.getJSON("https://api.wunderground.com/api/fd843d28868e77c2/conditions/q/MS/Water_Valley.json").done(function(json) {
+        var weather = json;
+        console.log(weather);
+        var temp = weather.current_observation.temp_f;
+        $('#temp_').text(temp);
+        if (Number(temp) <= 60) {
             $("body").css('background-image', 'url(img/snow.jpg)');
         }
          else {
