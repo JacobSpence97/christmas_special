@@ -65,7 +65,7 @@ $(document).ready(function() {
         var weather = json;
         console.log(weather);
         var temp = weather.current_observation.temp_f;
-        $('#temp_').text(temp);
+        // $('#temp_').text(temp);
         if (Number(temp) <= 60) {
             $("body").css('background-image', 'url(img/snow.jpg)');
         }
