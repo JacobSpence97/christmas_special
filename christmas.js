@@ -67,8 +67,7 @@ $(document).ready(function() {
         // $('#temp_').text(temp);
         if (Number(temp) <= 60) {
             $("body").css('background-image', 'url(img/snow.jpg)');
-        }
-         else {
+        } else {
             $("body").css('background-image', 'url(img/sun.jpg)');
         }
     });
