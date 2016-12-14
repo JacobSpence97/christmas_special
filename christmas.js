@@ -63,7 +63,6 @@ function grinch() {
 $(document).ready(function() {
     $.getJSON("https://api.wunderground.com/api/fd843d28868e77c2/conditions/q/MS/Water_Valley.json").done(function(json) {
         var weather = json;
-        console.log(weather);
         var temp = weather.current_observation.temp_f;
         // $('#temp_').text(temp);
         if (Number(temp) <= 60) {
