@@ -45,7 +45,7 @@ function show_choice() {
         christmas_tree();
 
     } else {
-        $("#treebox").attr("src", "img/snowman.png");
+        $("#treebox").attr("src", "img/snowman.png").stop(false, true);
         snowman();
     }
 };
