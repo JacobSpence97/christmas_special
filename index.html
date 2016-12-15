@@ -8,8 +8,9 @@
 </head>
 
 <body>
+  <div id=bigbox>
     <div id="temp_">
-        <a href="http://fontmeme.com/christmas-fonts/"><img src="http://fontmeme.com/permalink/161212/db9f6eaa83b16b5f91070837c209a271.png" alt="christmas-fonts" border="0"></a>
+        <center><a href="http://fontmeme.com/christmas-fonts/"><img src="http://fontmeme.com/permalink/161212/db9f6eaa83b16b5f91070837c209a271.png" alt="christmas-fonts" border="0"></a></center>
     </div>
     Do you wanna build a...
     <select id="myList">
@@ -19,13 +20,12 @@
     <button id='submit' type="button">ENTER CHOICE</button>
     <button id='grinch' type="button">SUBMIT YOUR CREATION!</button>
     <br><br><br><br><br>
-
-    <img id="treebox"></img>
-    <span id='items'>
-    </span>
-    <audio id='music' onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)" onended="song()">
+        <img id="treebox"></img>
+        <span id='items'></span>
+        <audio id='music' onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 3000)" onended="song()">
         <source src="" type="audio/mp3" />
     </audio>
+    </div>
     <script src="jquery.js"></script>
     <script src="jquery-ui.js"></script>
     <script src="snowstorm.js"></script>

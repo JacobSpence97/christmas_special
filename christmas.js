@@ -11,7 +11,7 @@ var ctd = ["ornament1.png", "ornament1.png", "ornament1.png", "ornament2.png", "
 
 function tree() {
     var which = trees[Math.floor(Math.random() * 3)];
-    $("#treebox").attr("src", "img/" + which);
+    $("#treebox").attr("src", "img/" + which).stop(false, true);
 };
 var pic = $("#treebox");
 var item = $("#items");
@@ -32,7 +32,9 @@ function snowman() {
 function christmas_tree() {
     for (x = 0; x < ctd.length; x++) {
         $("#items").append("<img src=img/" + ctd[x] + " ><\img>");
-        $("img").draggable();
+        $("img").draggable({
+          containment: "#bigbox"
+        });
     }
 };
 
@@ -58,6 +60,16 @@ function grinch() {
 
 };
 
+function background(image) {
+  $("body").css({'background': 'url(img/' + image + '.jpg) no-repeat center center fixed',
+                 '-webkit-background-size': 'cover',
+                 '-moz-background-size': 'cover',
+                 '-o-background-size': 'cover',
+                 'background-size': 'cover',
+                 'background-repeat': 'no-repeat'
+  });
+};
+
 
 
 $(document).ready(function() {
@@ -66,9 +78,9 @@ $(document).ready(function() {
         var temp = weather.current_observation.temp_f;
         // $('#temp_').text(temp);
         if (Number(temp) <= 60) {
-            $("body").css('background-image', 'url(img/snow.jpg)');
+            background('snow');
         } else {
-            $("body").css('background-image', 'url(img/sun.jpg)');
+            background('sun');
         }
     });
     $("#submit").click(function() {
